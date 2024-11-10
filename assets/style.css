@@ -1,0 +1,435 @@
+:root {
+  --primary: #2ebc84;
+  --secondary: #000000;
+  --tertiary: #ffffff;
+  --nice: #ecfff7;
+  --font-inti: "Irish Grover", system-ui;
+  --font-second: "Montserrat";
+}
+body {
+  font-family: var(--font-second);
+}
+/* Navbar */
+.navbar {
+  background-color: var(--tertiary);
+  border-bottom: 1px solid var(--secondary);
+}
+.navbar-brand {
+  font-family: var(--font-inti);
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+.navbar-brand:hover {
+  color: var(--primary);
+}
+.nav-link {
+  font-size: 1.2rem;
+  color: var(--secondary);
+  font-weight: 500;
+  text-align: center;
+}
+.btn-nav {
+  background-color: var(--primary);
+  color: var(--tertiary);
+  border: 1px solid var(--tertiary);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.6rem 2rem;
+}
+.btn-nav:hover {
+  background-color: var(--tertiary);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+/* hero */
+.hero {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: var(--nice);
+}
+.hero .hero-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.hero p {
+  font-family: var(--font-second);
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  max-width: 650px;
+}
+.hero h1 {
+  font-family: var(--font-second);
+  font-size: 3rem;
+  font-weight: 700;
+  width: 100%;
+  max-width: 880px;
+}
+.hero .btn-hero {
+  background-color: var(--primary);
+  color: var(--tertiary);
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 0.6rem 2rem;
+}
+.hero .btn-hero:hover {
+  background-color: var(--tertiary);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.hero .bot {
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.hero .bot a {
+  font-size: 3rem;
+  color: var(--primary);
+  transition: linear 0.2s;
+}
+.hero .bot a:hover {
+  font-size: 3rem;
+  color: var(--tertiary);
+  background-color: var(--primary);
+  padding: 0.1rem 0.8rem;
+  border-radius: 50%;
+}
+
+.hero .hero-img {
+  width: 90%;
+}
+
+/* desk */
+.desk {
+  margin-top: 5rem;
+  margin-bottom: 9rem;
+}
+.desk .top-desk {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.desk .top-desk p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  width: 100%;
+}
+.desk .row-desk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.desk .card-desk {
+  width: 100%;
+  height: 25rem;
+  text-align: center;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 20px 20px 0 0;
+  border: 3px solid rgb(124, 124, 124);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 12px rgba(0, 0, 0, 0.05);
+}
+.desk .card-desk img {
+  width: 50%;
+  border-radius: 50%;
+}
+.desk .card-desk h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.desk .card-desk p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.product {
+  margin-top: 4rem;
+  background-color: var(--nice);
+  padding: 7rem;
+}
+.product .top-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product .top-product h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 100%;
+  max-width: 400px;
+  color: var(--primary);
+}
+.product .top-product a,
+.bundle .top-bundle a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 0.5rem 1rem;
+  transition: linear 0.2s;
+}
+.product .top-product a:hover,
+.bundle .top-bundle a:hover {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--tertiary);
+  border: 1px solid var(--primary);
+  padding: 0.5rem 1rem;
+  background-color: var(--primary);
+}
+
+.product .card,
+.bundle .card,
+.product-page .card {
+  width: 100%;
+  margin: 0.5rem;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 12px rgba(0, 0, 0, 0.05);
+}
+.product .card h5,
+.bundle .card h5,
+.product-page .h5 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+.product .card p,
+.bundle .card p,
+.product-page p {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.product .card .btn-product,
+.bundle .card .btn-product,
+.product-page .btn-product {
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: var(--primary);
+  width: 100%;
+  color: var(--tertiary);
+}
+
+.maat,
+.bundle {
+  margin-top: 5rem;
+  padding: 7rem 0;
+}
+.maat .top-maat {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.maat .top-maat h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  width: 100%;
+  color: var(--primary);
+}
+.maat .card-maat {
+  width: 100%;
+  height: 26rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 12px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border: 3px solid rgb(124, 124, 124);
+  border-radius: 20px 20px 0 0;
+  margin: 1rem;
+}
+.maat .card-maat img {
+  width: 50%;
+  border-radius: 50%;
+  border: 1px solid var(--secondary);
+}
+.maat .card-maat h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.maat .card-maat p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.bundle {
+  margin-top: 5rem;
+  padding: 5rem 0;
+}
+.bundle .top-bundle {
+  text-align: center;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bundle .top-bundle h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  width: 100%;
+  max-width: 500px;
+  color: var(--primary);
+}
+.bundle .top-bundle a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 0.5rem 1rem;
+  transition: linear 0.2s;
+}
+.bundle {
+  background-color: var(--nice);
+}
+footer {
+  width: 100%;
+  height: auto;
+  padding-top: 2rem;
+}
+.row-footer {
+  padding: 2rem 0;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--secondary);
+}
+.row-footer .left {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.row-footer .left a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--secondary);
+  text-decoration: none;
+}
+.row-footer .right {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.row-footer .right a {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+#products .category {
+  visibility: hidden;
+  font-size: 0;
+}
+.product-page {
+  padding: 4rem 0;
+  margin-top: 4rem;
+  background-color: var(--nice);
+}
+.product-page .top-product {
+  text-align: center;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+.product-page .top-product h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  width: 100%;
+  max-width: 500px;
+  color: var(--primary);
+  margin: auto;
+}
+.product-page .top-product p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  width: 100%;
+  margin-top: 0.6rem;
+}
+.product-page .card {
+  height: 38rem;
+  display: flex;
+  justify-content: space-between;
+}
+.product-page .top-product {
+  margin-bottom: 0;
+}
+
+.search {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 30rem;
+  padding: 1rem;
+  border-radius: 20px;
+  height: 4rem;
+  border: 1px solid var(--primary);
+  overflow: hidden;
+  position: relative;
+}
+.search input {
+  width: 100%;
+  height: 4rem;
+  outline: none !important;
+  border: none;
+  font-size: 1.1rem;
+}
+.search input[type="search"] {
+  outline: none;
+}
+.search input[type="search"]:focus {
+  outline: none;
+}
+.search input[type="search"]:focus {
+  outline: none; /* Menghilangkan outline */
+  box-shadow: none; /* Menghilangkan efek box-shadow default Bootstrap */
+}
+.search button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: var(--tertiary);
+  background-color: var(--primary);
+  height: 10rem;
+  width: 4rem;
+  position: absolute;
+  right: 0;
+}
+.search button:hover {
+  background-color: var(--primary);
+  height: 10rem;
+  width: 4rem;
+  color: var(--tertiary);
+}
+.filter .category .form-select {
+  background-color: var(--primary);
+  color: var(--tertiary);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.product-page .btn-product:hover {
+  background-color: var(--tertiary);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  transition: ease-in-out 0.2s;
+}
