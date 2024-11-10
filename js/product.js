@@ -10,7 +10,7 @@ data.colorpages.forEach((product) => {
       <div class="col-6 col-md-4 col-lg-3" >
         <div class="card text-center" data-category="${product.category}">
           <img
-            src="assets/img/Bundle Cover/${product.image}"
+            src="../assets/img/Bundle Cover/${product.image}"
             class="card-img-top"
             alt="${product.title}"
           />
